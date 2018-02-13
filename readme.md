@@ -7,8 +7,6 @@ Dockerize bell app
 * Bell. It is bell app container build with node.js.
 * Couchdb. It is the database container which is initiated with `db-init`.
 
----
-
 ## How to use
 
 1. Download the source code. Get into the version folder (x86 or arm for example).
