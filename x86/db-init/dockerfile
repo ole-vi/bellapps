@@ -1,5 +1,9 @@
 FROM node:6.11-alpine
 
+LABEL MAINTAINER "Dashlorde <zhouyunlu0216@gmail.com>"
+LABEL MAINTAINER "Abdurrachman Mappuji <mappuji@ole.org>"
+LABEL MAINTAINER "dogi <stefan@unterhauser.name>"
+
 ENV version '0.13.21'
 
 RUN apk update && \
