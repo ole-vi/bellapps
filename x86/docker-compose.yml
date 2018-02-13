@@ -14,10 +14,6 @@ services:
     image: treehouses/bell:node-latest
     ports:
       - "80:80"
-    environment:
-      - HOST_PROTOCOL=http
-      - DB_HOST=127.0.0.1
-      - DB_PORT=2200
     depends_on:
       - couchdb
 version: "2"
