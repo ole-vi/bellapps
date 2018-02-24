@@ -2,18 +2,18 @@ services:
   couchdb:
     expose:
       - 5984
-    image: klaemo/couchdb
+    image: treehouses/rpi-couchdb:2.0.0
     ports:
       - "2200:5984"
       - "2201:5986"
   db-init:
-    image: treehouses/bell:db-init-latest
+    image: treehouses/bell:rpi-db-init-latest
     depends_on:
       - couchdb
   bell:
-    image: treehouses/bell:node-latest
+    image: treehouses/bell:rpi-latest
     ports:
-      - "80:80"
+      - "8080:80"
     depends_on:
       - couchdb
 version: "2"

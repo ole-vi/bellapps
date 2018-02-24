@@ -13,7 +13,7 @@ PortJack.get(/^(.+)$/, function(req, res) {
     if (options.hasOwnProperty(req.hostname)) {
         res.setHeader('Location', options[req.hostname])
     } else {
-        res.setHeader('Location', 'http://ole.org')
+        res.setHeader('Location', 'http://docker.ole.org:2200/apps/_design/bell/MyApp/index.html')
     }
 
     res.statusCode = 302

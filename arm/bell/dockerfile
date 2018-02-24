@@ -1,4 +1,4 @@
-FROM node:6.11-alpine
+FROM hypriot/rpi-node:6.10.0-alpine
 
 LABEL MAINTAINER "Dashlorde <zhouyunlu0216@gmail.com>"
 LABEL MAINTAINER "Abdurrachman Mappuji <mappuji@ole.org>"
