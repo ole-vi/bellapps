@@ -1,1 +1,1 @@
-docker build . -t treehouses/bell:node-latest
+docker build . -t treehouses/bell:latest
