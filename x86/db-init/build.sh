@@ -1,1 +1,1 @@
-docker build . -t treehouses/bell:db-init-latest
+docker build . -t bell:db-init-latest
