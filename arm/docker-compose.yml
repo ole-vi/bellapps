@@ -14,8 +14,6 @@ services:
     image: treehouses/bell:rpi-latest
     ports:
       - "8080:80"
-    environment:
-      - HOST=docker.ole.org
     depends_on:
       - couchdb
 version: "2"
