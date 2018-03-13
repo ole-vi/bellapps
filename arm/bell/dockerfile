@@ -6,7 +6,7 @@ LABEL MAINTAINER "dogi <stefan@unterhauser.name>"
 
 ENV version '0.13.21'
 
-RUN mkdir -p /app/server/src
+WORKDIR /app/server/src
 
 RUN apk add --update openssl && npm install express && \
     wget -O BeLL-Apps-${version}.tar.gz \
@@ -15,10 +15,7 @@ RUN apk add --update openssl && npm install express && \
     mv BeLL-Apps-${version}/* /app/server/src/ && \
     rm /app/server/src/package.json
 
-WORKDIR /app/server/src
-
 COPY server.js ./
-COPY package.json ./
 
 RUN chmod +x ./server.js && npm install
 
