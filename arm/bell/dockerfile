@@ -15,9 +15,7 @@ RUN apk add --update openssl && npm install express && \
     mv BeLL-Apps-${version}/* /app/server/src/ && \
     rm /app/server/src/package.json
 
-COPY server.js ./
-
-RUN chmod +x ./server.js && npm install
+RUN npm install
 
 EXPOSE 80
 
