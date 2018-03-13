@@ -1,2 +1,2 @@
-docker build bell/. -t treehouses/bell:rpi-latest
-docker build db-init/. -t treehouses/bell:rpi-db-init-latest
+docker build bell/. -t bell:rpi-latest
+docker build db-init/. -t bell:rpi-db-init-latest

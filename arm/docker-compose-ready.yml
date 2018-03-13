@@ -7,15 +7,15 @@ services:
       - "2200:5984"
       - "2201:5986"
   db-init:
-    image: bell:rpi-db-init-latest
+    image: treehouses/bell:rpi-db-init-latest
     depends_on:
       - couchdb
   bell:
-    image: bell:rpi-latest
+    image: treehouses/bell:rpi-latest
     ports:
       - "8080:80"
     environment:
-      - HOST=docker.ole.org
+      - HOST=127.0.0.1
     depends_on:
       - couchdb
 version: "2"
