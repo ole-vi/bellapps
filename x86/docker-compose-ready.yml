@@ -7,11 +7,11 @@ services:
       - "2200:5984"
       - "2201:5986"
   db-init:
-    image: bell:db-init-latest
+    image: treehouses/bell:db-init-latest
     depends_on:
       - couchdb
   bell:
-    image: bell:latest
+    image: treehouses/bell:latest
     ports:
       - "80:80"
     environment:

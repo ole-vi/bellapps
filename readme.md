@@ -9,6 +9,8 @@ Dockerize bell app
 
 ## How to use
 
+### Build manually
+
 1. Download the source code. Get into the version folder (x86 or arm for example).
 2. Run command to build the image
 
@@ -40,4 +42,21 @@ Dockerize bell app
 
     ```shell
     docker logs {{container_id}}
+    ```
+
+### Use the pre-build image
+
+1. Run command to start bell
+    ```shell
+    docker-compose -f docker-compose-ready.yml up -d
+    ```
+
+2. Run command to stop bell
+    ```shell
+    docker-compose -f docker-compose-ready.yml stop
+    ```
+
+3. Delete environment
+    ```shell
+    docker-compose -f docker-compose-ready.yml down
     ```
