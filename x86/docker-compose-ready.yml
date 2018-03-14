@@ -2,10 +2,9 @@ services:
   couchdb:
     expose:
       - 5984
-    image: klaemo/couchdb
     ports:
-      - "2200:5984"
-      - "2201:5986"
+      - "5984:5984"
+    image: klaemo/couchdb
   db-init:
     image: treehouses/bell:db-init-latest
     depends_on:

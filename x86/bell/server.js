@@ -7,7 +7,7 @@ var HOST = process.env.HOST;
 
 PortJack.get(/^(.+)$/, function(req, res) {
 
-    res.setHeader('Location', 'http://' + HOST + ':2200/apps/_design/bell/MyApp/index.html')
+    res.setHeader('Location', 'http://' + HOST + ':5984/apps/_design/bell/MyApp/index.html')
 
     res.statusCode = 302
     res.end()
