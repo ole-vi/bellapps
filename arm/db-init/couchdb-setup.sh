@@ -15,8 +15,8 @@ then
   HOST=127.0.0.1
 fi
 
-# Default port for CouchDB accessed from host machine is 2200
-PORT=${PORT:-2200}
+# Default port for CouchDB accessed from host machine is 5984
+PORT=${PORT:-5984}
 if [ -z "$COUCHUSER" ]
 then
   COUCHURL=http://$HOST:$PORT
